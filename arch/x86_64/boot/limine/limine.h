@@ -614,6 +614,27 @@ struct limine_dtb_request {
     LIMINE_PTR(struct limine_dtb_response *) response;
 };
 
+struct limine_boot_params {
+    LIMINE_PTR(volatile struct limine_bootloader_info_request *) bootloader_info;
+    LIMINE_PTR(volatile struct limine_firmware_type_request *) firmware_type;
+    LIMINE_PTR(volatile struct limine_stack_size_request *) stack_size;
+    LIMINE_PTR(volatile struct limine_hhdm_request *) hhdm;
+    LIMINE_PTR(volatile struct limine_framebuffer_request *) framebuffer;
+    LIMINE_PTR(volatile struct limine_paging_mode_request *) paging_mode;
+    LIMINE_PTR(volatile struct limine_smp_request *) smp;
+    LIMINE_PTR(volatile struct limine_memmap_request *) memmap;
+    LIMINE_PTR(volatile struct limine_entry_point_request *) entry_point;
+    LIMINE_PTR(volatile struct limine_kernel_file_request *) kernel_file;
+    LIMINE_PTR(volatile struct limine_module_request *) modules;
+    LIMINE_PTR(volatile struct limine_rsdp_request *) rsdp;
+    LIMINE_PTR(volatile struct limine_smbios_request *) smbios;
+    LIMINE_PTR(volatile struct limine_efi_system_table_request *) efi_system_table;
+    LIMINE_PTR(volatile struct limine_efi_memmap_request *) efi_memmap;
+    LIMINE_PTR(volatile struct limine_boot_time_request *) boot_time;
+    LIMINE_PTR(volatile struct limine_kernel_address_request *) kernel_address;
+    LIMINE_PTR(volatile struct limine_dtb_request *) dtb;
+};
+
 #ifdef __cplusplus
 }
 #endif

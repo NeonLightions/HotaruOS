@@ -5,7 +5,11 @@
 *.o
 *.elf
 
-# Linker output
+# Output
+*.img
+*.iso
+arch-loader
+hotaru-x86_64
 
 
 # Precompiled Headers

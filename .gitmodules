@@ -1,0 +1,9 @@
+[submodule "Limine"]
+	path = scripts/limine
+	url = https://github.com/limine-bootloader/limine.git
+	branch = v8.x-binary
+
+[submodule "OVMF"]
+	path = scripts/ovmf
+	url = https://github.com/NeonLightions/ovmf.git
+	branch = master
